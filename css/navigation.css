@@ -1,0 +1,30 @@
+.navigation__menu {
+    text-align: center;
+    margin: 10px auto;
+    border-bottom: 1px solid;
+}
+
+.navigation__list {
+    display: inline-block;
+    margin: auto 70px;
+    margin-bottom: 20px;
+}
+
+.navigation__link:hover {
+    color: rgb(221, 179, 42);
+}
+
+.navigation__link:focus {
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-radius: 0px;
+    padding: 4px;
+    color: rgb(221, 179, 42);
+}
+
+.navigation__continent {
+    text-decoration-line: none;
+    font-size: 18px;
+    text-transform: none;
+}

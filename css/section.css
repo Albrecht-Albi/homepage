@@ -1,0 +1,26 @@
+.section__heading {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.section__country {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.section__image {
+    width: 100%;
+    height: 100%;
+}
+
+.section__button {
+    background-color: rgb(253, 254, 255);
+    border-radius: 400%;
+    padding: 5px;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 70%;
+}

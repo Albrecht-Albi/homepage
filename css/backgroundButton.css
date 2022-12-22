@@ -1,0 +1,8 @@
+.backgroundButton {
+    background-color: rgb(253, 254, 255);
+    border-radius: 400%;
+    padding: 5px;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 70%;
+}
