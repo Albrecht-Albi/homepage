@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://albrechta-albi.github.io/homepage/
+https://albrecht-albi.github.io/homepage/
 
 ## How it works:
 ![website gif](https://drive.google.com/file/d/1fkidJFGm6_C7tFMIDTHkgcXgL2Lbh-u-/view?usp=share_link)
