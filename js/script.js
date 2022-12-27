@@ -11,8 +11,7 @@
         themeName.innerText = background.classList.contains("changeBackground") ? "ciemne" : "jasne";
     };
 
-    const hideTextGreek = () => {
-        
+    const hideTextGreek = (hideGreekButton) => {
         const hideGreek = document.querySelector(".js-hideGreek");
 
         hideGreek.hidden = !hideGreek.hidden;
@@ -21,7 +20,7 @@
             : "Ukryj opis";
     };
 
-    const hideTextPoland = () => {
+    const hideTextPoland = (hidePolandkButton) => {
         const hidePoland = document.querySelector(".js-hidePoland");
 
         hidePoland.hidden = !hidePoland.hidden;
@@ -30,7 +29,7 @@
             : "Ukryj opis";
     };
 
-    const hideTextBangkok = () => {
+    const hideTextBangkok = (hideBangkokButton) => {
         const hideBangkok = document.querySelector(".js-hideBangkok");
 
         hideBangkok.hidden = !hideBangkok.hidden;
@@ -39,7 +38,7 @@
             : "Ukryj opis";
     };
 
-    const hideTextDubai = () => {
+    const hideTextDubai = (hideDubaikButton) => {
         const hideDubaik = document.querySelector(".js-hideDubai");
         hideDubaik.hidden = !hideDubaik.hidden;
         hideDubaikButton.innerText = hideDubaik.hidden
@@ -47,7 +46,7 @@
             : "Ukryj opis";
     };
 
-    const hideTextEgypt = () => {
+    const hideTextEgypt = (hideEgyptButton) => {
         const hideEgypt = document.querySelector(".js-hideEgypt");
         hideEgypt.hidden = !hideEgypt.hidden;
         hideEgyptButton.innerText = hideEgypt.hidden
@@ -55,7 +54,7 @@
             : "Ukryj opis";
     };
 
-    const hideTextMarocco = () => {
+    const hideTextMarocco = (hideMaroccoButton) => {
         const hideMarocco = document.querySelector(".js-hideMarocco");
         hideMarocco.hidden = !hideMarocco.hidden;
         hideMaroccoButton.innerText = hideMarocco.hidden
@@ -63,31 +62,52 @@
             : "Ukryj opis";
     };
 
-    
-    const hidePolandkButton = document.querySelector(".js-hidePolandButton");
-    const hideBangkokButton = document.querySelector(".js-hideBangkokButton");
-    const hideDubaikButton = document.querySelector(".js-hideDubaikButton");
-    const hideEgyptButton = document.querySelector(".js-hideEgyptButton");
-    const hideMaroccoButton = document.querySelector(".js-hideMaroccoButton");
-
     const init = () => {
         const backgroundButton = document.querySelector(".js-backgroundButton");
-        const hideGreekButton = document.querySelector(".js-hideGreekButton");
         backgroundButton.addEventListener("click", toggleBackground);
-        hideGreekButton.addEventListener("click", hideTextGreek);
 
-        hidePolandkButton.addEventListener("click", hideTextPoland);
-        hideBangkokButton.addEventListener("click", hideTextBangkok);
-        hideDubaikButton.addEventListener("click", hideTextDubai);
-        hideEgyptButton.addEventListener("click", hideTextEgypt);
-        hideMaroccoButton.addEventListener("click", hideTextMarocco);
+        const hideGreekButton = document.querySelector(".js-hideGreekButton");
+        hideGreekButton.addEventListener("click", () =>
+        {
+            hideTextGreek(hideGreekButton);
+        });
+
+        const hidePolandkButton = document.querySelector(".js-hidePolandButton");
+        hidePolandkButton.addEventListener("click", () =>
+        {
+             hideTextPoland(hidePolandkButton);
+        });
+
+        const hideBangkokButton = document.querySelector(".js-hideBangkokButton");
+        hideBangkokButton.addEventListener("click", () =>
+        {
+            hideTextBangkok(hideBangkokButton);
+        });
+
+        const hideDubaikButton = document.querySelector(".js-hideDubaikButton");
+        hideDubaikButton.addEventListener("click", () =>
+        {
+            hideTextDubai(hideDubaikButton);
+        });
+
+        const hideEgyptButton = document.querySelector(".js-hideEgyptButton");
+        hideEgyptButton.addEventListener("click", () =>
+        {
+
+         hideTextEgypt(hideEgyptButton);
+        });
+        
+        const hideMaroccoButton = document.querySelector(".js-hideMaroccoButton"); 
+        hideMaroccoButton.addEventListener("click", () => 
+        {
+
+         hideTextMarocco(hideMaroccoButton);
+        });
 
         welcom();
-
 
     };
 
     init();
-
 
 };
