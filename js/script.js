@@ -12,6 +12,7 @@
     };
 
     const hideTextGreek = () => {
+        
         const hideGreek = document.querySelector(".js-hideGreek");
 
         hideGreek.hidden = !hideGreek.hidden;
@@ -62,7 +63,7 @@
             : "Ukryj opis";
     };
 
-    const hideGreekButton = document.querySelector(".js-hideGreekButton");
+    
     const hidePolandkButton = document.querySelector(".js-hidePolandButton");
     const hideBangkokButton = document.querySelector(".js-hideBangkokButton");
     const hideDubaikButton = document.querySelector(".js-hideDubaikButton");
@@ -71,8 +72,10 @@
 
     const init = () => {
         const backgroundButton = document.querySelector(".js-backgroundButton");
+        const hideGreekButton = document.querySelector(".js-hideGreekButton");
         backgroundButton.addEventListener("click", toggleBackground);
         hideGreekButton.addEventListener("click", hideTextGreek);
+
         hidePolandkButton.addEventListener("click", hideTextPoland);
         hideBangkokButton.addEventListener("click", hideTextBangkok);
         hideDubaikButton.addEventListener("click", hideTextDubai);
